@@ -1,0 +1,1 @@
+go build -o "./bin/money" ./cmd/moneyhole
