@@ -1,0 +1,6 @@
+package aggregator
+
+
+func Run() {
+	
+}
