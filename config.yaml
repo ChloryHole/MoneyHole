@@ -1,7 +1,0 @@
-AccountId: ""
-APIToken: ${APIToken}
-EndPoint: sandbox-invest-public-api.tinkoff.ru:443
-AppName: invest-api-go-sdk
-DisableResourceExhaustedRetry: false
-DisableAllRetry: false
-MaxRetries: 3

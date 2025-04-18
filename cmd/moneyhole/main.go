@@ -7,18 +7,26 @@ import (
 	"log/slog"
 	"net/http"
 	"time"
+	"log"
 
 	"github.com/labstack/echo/v4"
 
 	"database/sql"
 
 	_ "github.com/mattn/go-sqlite3"
+
+	"github.com/joho/godotenv"
 )
 
 
 func main() {
+	err := godotenv.Load()
+	if err != nil {
+		log.Fatal("Ошибка загрузки .env файла")
+	}
+
 	e := echo.New()
-	err := ConnectToDB()
+	err = ConnectToDB()
 	if err != nil {
 		slog.Error(err.Error())
 	}
